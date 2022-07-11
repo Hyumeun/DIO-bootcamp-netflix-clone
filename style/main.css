@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,400;0,600;0,700;1,400&display=swap');
+
+:root {
+    --cor5: #071011;
+    --cor6: #eacfae;
+    --cor7: #f2994b;
+    --cor8: #f23827;
+    --cor9: #8c0808;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+
+body {
+    background: var(--cor5);
+    font-family: 'Poppins', sans-serif;;
+    color: var(--cor6);
+}
+
+header {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    background-color: var(--cor5);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: var(--cor8);
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3rem;
+    margin-left: 1rem;
+    letter-spacing: 8px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: var(--cor6);
+    margin-right: 2rem;
+}
+
+header nav a:hover {
+    color: var(--cor7);
+}
+
+/*filme principal*/
+
+.filme-principal {
+    font-size: 1rem;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/manga/one-punch-panel.png');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.filme-principal .container {
+    width: 50%;
+}
+
+.filme-principal .descricao {
+    margin-bottom: 3rem;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.button {
+    background-color: rgba(0,0,0,.50);
+    color: #fff;
+    border: none;
+    padding: 1rem 0.7rem;
+    margin-right: 1rem;
+    font-size: 0.8em;
+    cursor: pointer;
+    transition: 0.3s ease all;
+}
+
+.button:hover {
+    color:  var(--cor9);
+    background-color: #fff;
+}
+
+.button i {
+    margin-right: 8px;
+}
+
+.container {
+    margin-left: 30px;
+}
+
+/*carrosel*/
+
+.carrosel {
+    margin-left: 1rem;
+}
+
+.carrosel h3 {
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.box-poster {
+    width: 100%;
+    height: 100%;
+    display: block;
+    filter: grayscale(0.7);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+    margin: 15px;
+}
+
+.box-poster:hover {
+    filter: grayscale(0);
+    transform: scale(1.02);
+}
