@@ -1,0 +1,46 @@
+@media screen and (max-width: 800px) {
+    header {
+        height: 12vh;
+    }
+    
+    header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titulo {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    .descricao {
+        font-size: 1rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 60%;
+    }
+
+    .button {
+        height: 40px;
+        font-size: 0.6em;
+        padding: 2px;
+    }
+
+    .carrosel .item {
+        width: 85%;
+    }
+}
